@@ -426,9 +426,174 @@
     font-style: italic;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
+/* ==========================================
+   Responsive Styles - Tablet
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* Header adjustments */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        text-align: left;
+        min-width: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .inspector-meta {
+        text-align: left;
+    }
+
+    /* Typography adjustments */
+    .header-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-context h1 {
+        font-size: 1.4rem;
+    }
+
+    /* Property grid stacking */
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Photo grid */
     .photo-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Reduce padding */
+    .intro-context {
+        padding: 18px 20px;
+    }
+
+    .inspection-scope,
+    .summary {
+        padding: 15px;
+    }
+}
+
+/* ==========================================
+   Responsive Styles - Mobile
+   ========================================== */
+@media (max-width: 480px) {
+
+    /* Base adjustments */
+    body {
+        font-size: 15px;
+    }
+
+    /* Header icon smaller on mobile */
+    .header-icon {
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+    }
+
+    .header-title-row {
+        gap: 10px;
+    }
+
+    /* Typography scaling */
+    .header-left h2 {
+        font-size: 1.25rem;
+    }
+
+    .report-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .intro-context h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro-context p {
+        font-size: 0.9rem;
+    }
+
+    /* Reduce padding further */
+    .intro-context {
+        padding: 15px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .inspection-scope,
+    .summary,
+    .seo-note {
+        padding: 12px;
+    }
+
+    /* Page outline - stack links */
+    .page-outline ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page-outline a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Photo item adjustments */
+    .photo-item figcaption {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Section headings */
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    /* Findings section */
+    .findings-details p,
+    .summary p,
+    .inspection-scope p {
+        font-size: 0.9rem;
+    }
+
+    /* Status checklist */
+    .status-checklist li {
+        font-size: 0.9rem;
+        padding-left: 24px;
+    }
+}
+
+/* ==========================================
+   Responsive Styles - Small Mobile
+   ========================================== */
+@media (max-width: 360px) {
+    .intro-context {
+        padding: 12px;
+        margin: 0 5px 15px 5px;
+        border-radius: 6px;
+    }
+
+    .intro-context h1 {
+        font-size: 1.1rem;
+    }
+
+    .header-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .header-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-outline a {
+        padding: 6px 8px;
+        font-size: 0.8rem;
     }
 }

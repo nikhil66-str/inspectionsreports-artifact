@@ -302,4 +302,27 @@
     .signature-meta {
         margin-top: 1rem;
     }
+
+    /* Disclaimer and other sections */
+    .report-disclaimer {
+        padding-top: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .report-disclaimer p {
+        line-height: 1.5;
+    }
+
+    .common-failures,
+    .report-annotations {
+        padding-top: 1rem;
+    }
+
+    .failure-list li {
+        font-size: 0.9rem;
+    }
+
+    .annotation-item p {
+        font-size: 0.85rem;
+    }
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- NFPA 211 Level 1 Chimney Inspection Report Example -->
   <url>
-    <loc>https://chimneyinspectionreports.com/nfpa-211-level-1-chimney-inspection-report-example/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://inspectionsreports.com/nfpa-211-level-1-chimney-inspection-report-example/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

@@ -11,4 +11,4 @@ Disallow: /partials/
 Disallow: /content/
 
 # Sitemap
-Sitemap: https://chimneyinspectionreports.com/sitemap.xml
+Sitemap: https://inspectionsreports.com/sitemap.xml

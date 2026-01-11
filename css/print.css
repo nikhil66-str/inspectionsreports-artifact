@@ -1,0 +1,137 @@
+/* Print stylesheet */
+
+/* Page setup */
+@page {
+    margin: 1in;
+    size: letter;
+}
+
+@media print {
+
+    /* Base print styles */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    /* Force background colors to print */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Hide interactive/non-essential elements */
+    nav,
+    button,
+    .report-annotations,
+    .feedback-cta,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Content sections print styles */
+    .report-disclaimer,
+    .common-failures {
+        page-break-inside: avoid;
+    }
+
+    /* Photo grid - 2 columns for print */
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Prevent page breaks inside elements */
+    figure,
+    img,
+    .report-signature,
+    .summary,
+    .inspection-scope {
+        page-break-inside: avoid;
+    }
+
+    /* Table print styles */
+    .inspection-checklist table,
+    .inspection-checklist tr,
+    .inspection-checklist td,
+    .inspection-checklist th {
+        page-break-inside: avoid;
+    }
+
+    .inspection-checklist th {
+        background: #eee !important;
+    }
+
+    /* Keep checklist table in table format for print */
+    .checklist-table,
+    .checklist-table thead,
+    .checklist-table tbody,
+    .checklist-table th,
+    .checklist-table td,
+    .checklist-table tr {
+        display: revert;
+    }
+
+    .checklist-table thead {
+        display: table-header-group;
+    }
+
+    .checklist-table td::before {
+        display: none;
+    }
+
+    /* Show URLs after links */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+
+    /* Don't show URL for tel: and mailto: links */
+    a[href^="tel:"]::after,
+    a[href^="mailto:"]::after {
+        content: none;
+    }
+
+    /* Signature print styles */
+    .signature-line .line {
+        border-bottom: 2px solid #000;
+    }
+
+    /* Ensure signature block stays together */
+    .signature-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Headers should not be orphaned */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
+
+
+    .report-disclaimer {
+        page-break-inside: avoid;
+    }
+
+
+    .common-failures {
+        page-break-inside: avoid;
+    }
+
+
+    .report-annotations {
+        display: none;
+
+    }
+
+
+
+
+}

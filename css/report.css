@@ -1,0 +1,305 @@
+/* Report stylesheet */
+
+/* ==========================================
+   Photo Documentation Styles
+   ========================================== */
+.photo-documentation {
+    margin-top: 2rem;
+}
+
+.photo-note {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.photo-grid figure {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background: #fafafa;
+    transition: box-shadow 0.2s ease;
+}
+
+.photo-grid figure:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.photo-grid figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+/* ==========================================
+   Inspection Checklist Styles
+   ========================================== */
+.inspection-checklist {
+    margin-top: 2rem;
+}
+
+.checklist-note {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.checklist-table th,
+.checklist-table td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+    vertical-align: top;
+}
+
+.checklist-table th {
+    background: #f5f5f5;
+    text-align: left;
+    font-weight: 600;
+}
+
+.checklist-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.checklist-table td:nth-child(2) {
+    width: 140px;
+    font-weight: 600;
+}
+
+/* Status color coding */
+.status-ok {
+    color: #2e7d32;
+}
+
+.status-concern {
+    color: #e65100;
+    background-color: #fff3e0;
+}
+
+.status-na {
+    color: #757575;
+    font-style: italic;
+}
+
+
+.report-signature {
+    margin-top: 2.5rem;
+}
+
+.signature-note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.signature-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.signature-line {
+    flex: 1;
+    min-width: 200px;
+}
+
+.signature-line .label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.signature-line .line {
+    display: block;
+    border-bottom: 1px solid #000;
+    height: 2rem;
+    min-width: 200px;
+}
+
+.signature-meta {
+    flex: 1;
+    font-size: 0.95rem;
+    min-width: 200px;
+}
+
+.signature-meta p {
+    margin: 0;
+}
+
+.signature-meta p+p {
+    margin-top: 0.5rem;
+}
+
+.report-disclaimer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #ddd;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.report-disclaimer h3 {
+    margin-bottom: 0.8rem;
+}
+
+.common-failures {
+    margin-top: 2.5rem;
+}
+
+.failures-intro {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.failure-list {
+    padding-left: 1.2rem;
+}
+
+.failure-list li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.failure-summary {
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+
+.report-annotations {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #ddd;
+}
+
+.annotations-intro {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.annotation-item {
+    margin-bottom: 1.4rem;
+}
+
+.annotation-item h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+.annotation-item p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Responsive table - stacked cards on mobile */
+    .checklist-table,
+    .checklist-table thead,
+    .checklist-table tbody,
+    .checklist-table th,
+    .checklist-table td,
+    .checklist-table tr {
+        display: block;
+    }
+
+    .checklist-table thead {
+        display: none;
+    }
+
+    .checklist-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        padding: 0.75rem;
+        border-radius: 4px;
+        background: #fafafa;
+    }
+
+    .checklist-table td {
+        border: none;
+        padding: 0.4rem 0;
+    }
+
+    .checklist-table td::before {
+        content: attr(data-label) ": ";
+        font-weight: 600;
+        color: #333;
+    }
+
+    .checklist-table td:first-child {
+        font-weight: 600;
+        font-size: 1rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .checklist-table td:first-child::before {
+        display: none;
+    }
+
+    /* Signature mobile layout */
+    .signature-block {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .signature-line,
+    .signature-meta {
+        width: 100%;
+    }
+
+    .signature-meta {
+        margin-top: 1rem;
+    }
+}

@@ -1,14 +1,5 @@
-# ===========================================
-# robots.txt
-# NFPA 211 Chimney Inspection Resources
-# ===========================================
-
 User-agent: *
 Allow: /
 
-# Prevent indexing of internal fragments / partials
-Disallow: /partials/
-Disallow: /content/
-
-# Sitemap
 Sitemap: https://inspectionsreports.com/sitemap.xml
+

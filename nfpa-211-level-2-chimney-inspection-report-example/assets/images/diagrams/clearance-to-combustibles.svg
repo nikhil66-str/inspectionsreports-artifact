@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7fafc"/>
+      <stop offset="100%" style="stop-color:#edf2f7"/>
+    </linearGradient>
+    <linearGradient id="chimneyGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a0aec0"/>
+      <stop offset="100%" style="stop-color:#718096"/>
+    </linearGradient>
+    <pattern id="woodPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#c4a777"/>
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#a08060" stroke-width="1"/>
+      <line x1="0" y1="15" x2="20" y2="15" stroke="#a08060" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="500" fill="url(#bgGrad2)"/>
+  
+  <!-- Title -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a365d" text-anchor="middle">Clearance to Combustibles</text>
+  <text x="300" y="55" font-family="Arial, sans-serif" font-size="14" fill="#4a5568" text-anchor="middle">NFPA 211 Requirements</text>
+  
+  <!-- Attic Floor -->
+  <rect x="50" y="200" width="200" height="20" fill="url(#woodPattern)" stroke="#8b7355" stroke-width="2"/>
+  <rect x="350" y="200" width="200" height="20" fill="url(#woodPattern)" stroke="#8b7355" stroke-width="2"/>
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="12" fill="#4a5568" text-anchor="middle">Wood Framing</text>
+  <text x="450" y="240" font-family="Arial, sans-serif" font-size="12" fill="#4a5568" text-anchor="middle">Wood Framing</text>
+  
+  <!-- Chimney -->
+  <rect x="250" y="80" width="100" height="340" fill="url(#chimneyGrad2)" stroke="#4a5568" stroke-width="2"/>
+  <rect x="260" y="90" width="80" height="320" fill="#e2e8f0" stroke="#a0aec0" stroke-width="1"/>
+  
+  <!-- Chimney Label -->
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">MASONRY</text>
+  <text x="300" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">CHIMNEY</text>
+  
+  <!-- Flue Label -->
+  <text x="300" y="150" font-family="Arial, sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">Flue Liner</text>
+  
+  <!-- Clearance Arrows - Left -->
+  <line x1="250" y1="180" x2="210" y2="180" stroke="#c53030" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="250" y1="180" x2="250" y2="180" stroke="#c53030" stroke-width="2"/>
+  
+  <g transform="translate(200, 160)">
+    <rect x="-50" y="-15" width="50" height="30" fill="#fed7d7" stroke="#c53030" stroke-width="1" rx="3"/>
+    <text x="-25" y="5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c53030" text-anchor="middle">2"</text>
+  </g>
+  
+  <!-- Clearance Arrows - Right -->
+  <line x1="350" y1="180" x2="390" y2="180" stroke="#c53030" stroke-width="2"/>
+  
+  <g transform="translate(400, 160)">
+    <rect x="0" y="-15" width="50" height="30" fill="#fed7d7" stroke="#c53030" stroke-width="1" rx="3"/>
+    <text x="25" y="5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c53030" text-anchor="middle">2"</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="50" y="440" width="500" height="50" fill="white" stroke="#cbd5e0" stroke-width="1" rx="5"/>
+  <text x="80" y="462" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2d3748">NFPA 211 Requirement:</text>
+  <text x="80" y="478" font-family="Arial, sans-serif" font-size="11" fill="#4a5568">Minimum 2" clearance between masonry chimney and combustible materials</text>
+  
+  <!-- Danger Zone Hatching -->
+  <rect x="200" y="180" width="50" height="40" fill="none" stroke="#c53030" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="350" y="180" width="50" height="40" fill="none" stroke="#c53030" stroke-width="1" stroke-dasharray="5,3"/>
+  
+  <!-- Additional Labels -->
+  <text x="300" y="75" font-family="Arial, sans-serif" font-size="11" fill="#4a5568" text-anchor="middle">Chimney Crown</text>
+  <text x="300" y="435" font-family="Arial, sans-serif" font-size="11" fill="#4a5568" text-anchor="middle">Firestop Required at Each Floor</text>
+  
+  <!-- Firestop -->
+  <rect x="248" y="195" width="104" height="10" fill="#ed8936" stroke="#c05621" stroke-width="1"/>
+  <text x="390" y="203" font-family="Arial, sans-serif" font-size="9" fill="#c05621">Firestop</text>
+</svg>

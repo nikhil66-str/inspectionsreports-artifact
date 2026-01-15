@@ -1,0 +1,599 @@
+/* Main stylesheet */
+
+/* ==========================================
+   Intro Context Section (SEO)
+   ========================================== */
+.intro-context {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 22px 30px;
+    background: linear-gradient(135deg, #fafbfc 0%, #f4f6f8 100%);
+    border-radius: 10px;
+    border-left: 4px solid #1976d2;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.intro-context h1 {
+    margin: 0 0 12px 0;
+    font-size: 1.6rem;
+    color: #1a1a2e;
+    line-height: 1.3;
+}
+
+.intro-context p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #444;
+}
+
+.intro-context p:last-of-type {
+    margin-bottom: 0;
+}
+
+.intro-context strong {
+    color: #1565c0;
+}
+
+.intro-audience {
+    margin-top: 12px !important;
+    padding-top: 12px;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.9rem !important;
+    color: #666 !important;
+}
+
+.intro-audience strong {
+    color: #444 !important;
+}
+
+/* Page Outline Navigation (Internal Links) */
+.page-outline {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e9ecef;
+}
+
+.page-outline strong {
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.page-outline ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-outline li {
+    margin: 0;
+}
+
+.page-outline a {
+    font-size: 0.85rem;
+    color: #1976d2;
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: rgba(25, 118, 210, 0.08);
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page-outline a:hover {
+    background-color: rgba(25, 118, 210, 0.18);
+    color: #0d47a1;
+}
+
+/* ==========================================
+   Report Header Styles
+   ========================================== */
+.report-header {
+    margin-bottom: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Header Title Row with Icon */
+.header-title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icon {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    color: #1565c0;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+}
+
+.header-left h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.report-subtitle {
+    color: #555;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.header-right {
+    text-align: right;
+    min-width: 250px;
+}
+
+.header-right p {
+    margin: 0;
+}
+
+.header-right p+p {
+    margin-top: 5px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+.header-divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+
+.inspector-info {
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.inspector-info p {
+    margin: 0;
+}
+
+.inspector-info p+p {
+    margin-top: 5px;
+}
+
+.inspector-meta {
+    text-align: right;
+}
+
+/* ==========================================
+   Property Info Styles
+   ========================================== */
+.property-info {
+    margin-top: 30px;
+}
+
+.property-info h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.address-block p,
+.status-block p {
+    margin: 0;
+}
+
+.address-text {
+    margin: 5px 0 !important;
+    line-height: 1.4;
+}
+
+.status-block p+p {
+    margin-top: 10px !important;
+}
+
+/* ==========================================
+   Inspection Scope Styles
+   ========================================== */
+.inspection-scope {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #333;
+}
+
+.inspection-scope h3 {
+    margin-top: 0;
+}
+
+.inspection-scope p {
+    line-height: 1.5;
+}
+
+.scope-note {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #444;
+}
+
+/* ==========================================
+   Findings Styles
+   ========================================== */
+.findings {
+    margin-top: 30px;
+}
+
+.overall-status ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.overall-status li {
+    margin: 5px 0;
+}
+
+.findings-details h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.findings-details p {
+    line-height: 1.6;
+}
+
+/* ==========================================
+   Summary Styles
+   ========================================== */
+.summary {
+    margin-top: 30px;
+    background-color: #f0f7f0;
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #2e7d32;
+}
+
+.summary h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.summary p {
+    line-height: 1.6;
+}
+
+.summary-cta {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+/* ==========================================
+   Status Checklist Styles
+   ========================================== */
+.status-checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.status-checklist li {
+    margin: 8px 0;
+    padding-left: 28px;
+    position: relative;
+}
+
+.status-checklist li::before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+    font-size: 1.1em;
+}
+
+.status-checklist li.status-checked::before {
+    content: "☑";
+    color: #2e7d32;
+}
+
+/* ==========================================
+   SEO Example Note Styles
+   ========================================== */
+.seo-note {
+    margin: 20px 0 30px 0;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border: 1px solid #ffb74d;
+    border-left: 4px solid #f57c00;
+    border-radius: 4px;
+}
+
+.seo-note p {
+    margin: 0;
+    color: #e65100;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.seo-note strong {
+    color: #bf360c;
+}
+
+/* ==========================================
+   Photo Documentation Styles
+   ========================================== */
+.photo-documentation {
+    margin-top: 30px;
+}
+
+.photo-documentation h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.photos-intro {
+    background-color: #e3f2fd;
+    padding: 12px 16px;
+    border-left: 4px solid #1976d2;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.photos-intro strong {
+    color: #0d47a1;
+}
+
+/* Photo Grid Layout */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+/* Individual Photo Items */
+.photo-item {
+    margin: 0;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.photo-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.photo-item figcaption {
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.photo-item figcaption strong {
+    color: #333;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.photos-note {
+    font-weight: 500;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ==========================================
+   Responsive Styles - Tablet
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* Header adjustments */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        text-align: left;
+        min-width: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .inspector-meta {
+        text-align: left;
+    }
+
+    /* Typography adjustments */
+    .header-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-context h1 {
+        font-size: 1.4rem;
+    }
+
+    /* Property grid stacking */
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Photo grid */
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduce padding */
+    .intro-context {
+        padding: 18px 20px;
+    }
+
+    .inspection-scope,
+    .summary {
+        padding: 15px;
+    }
+}
+
+/* ==========================================
+   Responsive Styles - Mobile
+   ========================================== */
+@media (max-width: 480px) {
+
+    /* Base adjustments */
+    body {
+        font-size: 15px;
+    }
+
+    /* Header icon smaller on mobile */
+    .header-icon {
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+    }
+
+    .header-title-row {
+        gap: 10px;
+    }
+
+    /* Typography scaling */
+    .header-left h2 {
+        font-size: 1.25rem;
+    }
+
+    .report-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .intro-context h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro-context p {
+        font-size: 0.9rem;
+    }
+
+    /* Reduce padding further */
+    .intro-context {
+        padding: 15px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .inspection-scope,
+    .summary,
+    .seo-note {
+        padding: 12px;
+    }
+
+    /* Page outline - stack links */
+    .page-outline ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page-outline a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Photo item adjustments */
+    .photo-item figcaption {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Section headings */
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    /* Findings section */
+    .findings-details p,
+    .summary p,
+    .inspection-scope p {
+        font-size: 0.9rem;
+    }
+
+    /* Status checklist */
+    .status-checklist li {
+        font-size: 0.9rem;
+        padding-left: 24px;
+    }
+}
+
+/* ==========================================
+   Responsive Styles - Small Mobile
+   ========================================== */
+@media (max-width: 360px) {
+    .intro-context {
+        padding: 12px;
+        margin: 0 5px 15px 5px;
+        border-radius: 6px;
+    }
+
+    .intro-context h1 {
+        font-size: 1.1rem;
+    }
+
+    .header-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .header-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-outline a {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+}
